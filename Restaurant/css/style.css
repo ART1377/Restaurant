@@ -1,0 +1,254 @@
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --brand: #f58d17;
+  --brand-2: #d37810;
+}
+body {
+  font-family: "Spline Sans", sans-serif;
+  color: #777;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+  color: #222;
+}
+
+a {
+  color: #222;
+  text-decoration: none !important;
+  transition: all 0.4s;
+}
+
+a:hover {
+  color: var(--brand);
+}
+
+a.active {
+  color: var(--brand)!important;
+}
+
+img {
+  width: 100%;
+}
+
+.shadow-on-hover {
+  transition: all 0.3s;
+}
+
+.shadow-on-hover:hover {
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Btn */
+.btn-default {
+  border-radius: 0;
+  padding: 14px 38px !important;
+}
+
+.btn-brand {
+  color: #fff;
+  font-weight: 500;
+  border-color: var(--brand);
+  background-color: var(--brand);
+}
+
+.btn-brand:hover {
+  border-color: var(--brand-2);
+  background-color: var(--brand-2);
+  color: #fff;
+}
+
+/* ***** start home ***** */
+.navbar {
+  background-color: #fff;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.1);
+}
+/* ***** end home ***** */
+
+/* ***** start home ***** */
+.carousel-item-1 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(../img/cover1.jpg) center center/cover no-repeat !important;
+}
+.carousel-item-2 {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url(../img/cover2.jpg) center center/cover no-repeat !important;
+}
+
+.carousel-item h6::after,
+.carousel-item h6::before {
+  content: "";
+  width: 2rem;
+  height: 2px;
+  background-color: #fff;
+  display: inline-block;
+  margin: 0 5px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50%;
+  height: 50%;
+  margin: auto;
+}
+/* ***** end home ***** */
+
+/* ***** start about ***** */
+.divider {
+  background-color: var(--brand);
+  height: 3px;
+  width: 4rem;
+}
+/* ***** end about ***** */
+
+/* ***** start menu ***** */
+.nav .nav-item .nav-link {
+  background-color: #fff !important;
+  color: #222;
+  border-radius: 100px;
+  margin: 0.5rem;
+  box-shadow: 5px 3px 4px rgba(0, 0, 0, 0.1);
+}
+.nav .nav-item .nav-link.active {
+  background-color: var(--brand) !important;
+}
+.card-title a {
+  color: #222;
+}
+.card-title a:hover {
+  color: var(--brand);
+}
+.stars {
+  color: var(--brand);
+  vertical-align: middle;
+  margin-left: 5px;
+}
+/* ***** end menu ***** */
+
+/* ***** start features ***** */
+.features {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/cover2.jpg) center center/cover no-repeat !important;
+}
+.feature-icon {
+  color: #fff;
+  background-color: var(--brand);
+}
+/* ***** end features ***** */
+
+/* ***** start team ***** */
+.team-card-img {
+  width: 90%;
+  box-shadow: -10px -10px var(--brand);
+}
+/* ***** end team ***** */
+
+/* ***** start reservation ***** */
+.form-group .form-control::placeholder {
+  color: var(--brand);
+}
+.form-group .form-control {
+  border: 1px solid var(--brand);
+}
+.form-group .form-control:active,
+.form-group .form-control:focus {
+  box-shadow: none;
+  border: 1px solid var(--brand);
+  box-shadow: 2px 2px 2px var(--brand);
+}
+/* ***** end reservation ***** */
+
+/* ***** start client ***** */
+.client {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/cover3.jpg);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.client-img {
+  height: 100px;
+  width: 100px;
+}
+#clientCarousel .carousel-item {
+  background-color: #fff;
+}
+.client-icon {
+  color: var(--brand);
+}
+#clientCarousel .carousel-control-prev,
+#clientCarousel .carousel-control-next {
+  width: 6%;
+  height: 20%;
+  background: rgba(189, 188, 188, 0.39);
+}
+.carousel .carousel-indicators li {
+  background-color: gray;
+}
+.carousel .carousel-indicators li.active {
+  background-color: var(--brand);
+}
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+/* ***** end client ***** */
+
+.img-container{
+  overflow: hidden;
+}
+.gallery-card-img{
+  transition: all .4s;
+}
+.img-container:hover .gallery-card-img{
+  transform: scale(1.1);
+}
+.img-container:hover .card-img-overlay{
+  display: flex!important;
+}
+.card-img-overlay i{
+  transition: all .4s;
+}
+.card-img-overlay i:hover{
+  color: var(--brand)!important;
+}
+
+
+
+
+/* ***** start blog ***** */
+.blog-card-img {
+  object-fit: cover;
+}
+/* ***** end blog ***** */
+
+
+
+/* ***** start footer ***** */
+.footer {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(../img/cover3.jpg);
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+.footer-logo {
+  width: 30%;
+}
+.footer-text,
+.footer-social-icon {
+  color: rgb(201, 201, 201) !important;
+}
+.footer-social-icon:hover {
+  color: var(--brand) !important;
+}
+/* ***** end footer ***** */
